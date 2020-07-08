@@ -38,10 +38,10 @@ export const MyForm: React.FC = () => {
           method="POST"
         >
           <label>Email:</label>
-          <input type="email" name="email" />
+          <input required type="email" name="email" />
           <div className="message-group">
             <label>Message:</label>
-            <textarea name="message" />
+            <textarea required name="message" />
           </div>
 
           {status === "SUCCESS" ? (

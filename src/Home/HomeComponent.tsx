@@ -52,7 +52,14 @@ export const HomeComponent: React.FC = () => {
                 href="https://www.etsy.com/shop/TheHooperHandcrafted"
                 target="_blank"
               >
-                <div className="etsy-button">Check out my store on Etsy</div>
+                <div className="etsy-button">Check out my Etsy Store</div>
+              </a>
+
+              <a
+                href="https://www.instagram.com/wesleyhooperart/"
+                target="_blank"
+              >
+                <div className="insta-button">Check out my Instagram</div>
               </a>
             </div>
           </div>

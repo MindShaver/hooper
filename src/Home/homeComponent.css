@@ -91,12 +91,13 @@
 
 .button-group {
   margin-top: 25px;
+  display: flex;
 }
 
 .etsy-button {
-  width: 300px;
-  height: 80px;
-  font-size: 26px;
+  width: 180px;
+  height: 60px;
+  font-size: 16px;
   font-weight: bold;
   background-color: rgb(11, 100, 48);
   color: white;
@@ -109,10 +110,36 @@
   -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.insta-button {
+  width: 180px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(14, 34, 144);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.insta-button:hover {
+  cursor: pointer;
+  background-color: rgb(23, 50, 206);
 }
 
 .button-group a {
   text-decoration: none;
+  margin-right: 20px;
 }
 
 .etsy-button:hover {

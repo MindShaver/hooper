@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 export const Footer: React.FC = () => {
   return (
@@ -12,7 +13,12 @@ export const Footer: React.FC = () => {
               target="_blank"
               className="fa fa-instagram"
             ></a>
-            <a href="#" className="fa fa-twitter"></a>
+            <a
+              href="https://www.etsy.com/shop/TheHooperHandcrafted"
+              className="fa fa-etsy"
+              target="_blank"
+            ></a>
+            <Link to="/contact" className="fa fa-envelope" />
           </div>
         </div>
 
