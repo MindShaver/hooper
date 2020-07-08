@@ -1,0 +1,46 @@
+.footer-container {
+  width: 1080px;
+  margin: 10px auto;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.footer-row {
+  display: flex;
+}
+
+.footer-col {
+  flex-basis: 100%;
+}
+
+.footer-left {
+  height: 50px;
+  width: auto;
+}
+
+.footer-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: auto;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-right {
+  height: 50px;
+  width: auto;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  color: black;
+}

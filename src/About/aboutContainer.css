@@ -1,0 +1,44 @@
+.about-container {
+  width: 1080px;
+  height: 80vh;
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex-basis: 100%;
+}
+
+.left-side-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  padding: 0 10px 10px 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  margin-top: 20px;
+}
+
+.right-side-group {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 90px;
+}
+
+.about-image {
+  height: 400px;
+  width: 375px;
+  border-radius: 50px;
+}
+
+.paragraph-item {
+  padding: 10px;
+}
