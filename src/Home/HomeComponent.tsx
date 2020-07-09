@@ -15,6 +15,13 @@ export const HomeComponent: React.FC = () => {
               <h3>Visual Artist</h3>
             </div>
             <div className="divider"></div>
+            <div className="mobile-hero">
+              <img
+                className="mobile-home-image"
+                src={HomeImage}
+                alt="Mobile Home"
+              />
+            </div>
             <div className="intro-text">
               <div className="paragraph-item">
                 <p>
@@ -51,6 +58,7 @@ export const HomeComponent: React.FC = () => {
               <a
                 href="https://www.etsy.com/shop/TheHooperHandcrafted"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="etsy-button">Check out my Etsy Store</div>
               </a>
@@ -58,6 +66,7 @@ export const HomeComponent: React.FC = () => {
               <a
                 href="https://www.instagram.com/wesleyhooperart/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="insta-button">Check out my Instagram</div>
               </a>
@@ -67,11 +76,23 @@ export const HomeComponent: React.FC = () => {
         <div className="col">
           <div className="home-right-side">
             <div>
-              <img className="home-image" src={HomeImage} />
+              <img
+                className="home-image"
+                src={HomeImage}
+                alt="Featured Scultpure"
+              />
             </div>
             <div>
-              <img className="sub-image left-image" src={SubImageTwo} />
-              <img className="sub-image right-image" src={SubImageOne} />
+              <img
+                className="sub-image left-image"
+                src={SubImageTwo}
+                alt="Coffee Mug"
+              />
+              <img
+                className="sub-image right-image"
+                src={SubImageOne}
+                alt="Platter"
+              />
             </div>
           </div>
         </div>

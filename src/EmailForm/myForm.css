@@ -22,12 +22,14 @@ input {
   width: 410px;
   height: 30px;
   display: block;
+  padding: 10px;
 }
 
 textarea {
   width: 410px;
   height: 60px;
   display: block;
+  padding: 10px;
 }
 
 .message-group {
@@ -47,4 +49,41 @@ textarea {
   color: white;
   background-color: rebeccapurple;
   letter-spacing: 0.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-container {
+    width: 95%;
+    height: 100%;
+  }
+
+  .form {
+    width: 95%;
+    margin-bottom: 36%;
+  }
+
+  .sub-message {
+    text-align: center;
+  }
+
+  .submit-button {
+    width: 95%;
+    height: 60px;
+  }
+
+  input {
+    width: 95%;
+    height: 60px;
+    display: block;
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  textarea {
+    width: 95%;
+    height: 100px;
+    display: block;
+    font-size: 24px;
+    padding: 10px;
+  }
 }

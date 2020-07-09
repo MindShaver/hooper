@@ -11,11 +11,13 @@ export const Footer: React.FC = () => {
             <a
               href="https://www.instagram.com/wesleyhooperart/"
               target="_blank"
+              rel="noopener noreferrer"
               className="fa fa-instagram"
             ></a>
             <a
               href="https://www.etsy.com/shop/TheHooperHandcrafted"
               className="fa fa-etsy"
+              rel="noopener noreferrer"
               target="_blank"
             ></a>
             <Link to="/contact" className="fa fa-envelope" />
@@ -27,7 +29,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="footer-col">
-          <div className="footer-right"></div>
+          <div className="footer-right">&copy; 2020</div>
         </div>
       </div>
     </div>

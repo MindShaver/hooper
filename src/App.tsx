@@ -1,10 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Dashboard } from "./Dashboard/Dashboard";
 import { Footer } from "./Footer/Footer";
 import { Navbar } from "./Navbar/Navbar";
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { SculptureContainer } from "./Sculpture/SculptureContainer";
 import { PotteryContainer } from "./Pottery/PotteryContainer";
 import { AboutContainer } from "./About/AboutContainer";

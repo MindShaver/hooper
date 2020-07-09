@@ -5,3 +5,10 @@
   margin: 0 auto;
   border-radius: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  .contact-container {
+    width: 95%;
+    height: 100%;
+  }
+}

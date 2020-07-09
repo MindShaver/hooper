@@ -32,6 +32,7 @@
 .footer-right {
   height: 50px;
   width: auto;
+  display: none;
 }
 
 .fa {
@@ -43,4 +44,28 @@
   border-radius: 50%;
   margin-left: 10px;
   color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-container {
+    width: 95%;
+    height: 100%;
+  }
+
+  .footer-center {
+    display: none;
+  }
+
+  .fa {
+    width: 20px;
+    margin-right: 5px;
+  }
+
+  .footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
 }
