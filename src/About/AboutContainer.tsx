@@ -8,6 +8,13 @@ export const AboutContainer = () => {
       <div className="row">
         <div className="col">
           <div className="left-side-group">
+            <div className="mobile-image-group">
+              <img
+                className="mobile-about-image"
+                src={AboutImage}
+                alt="Wesley Hooper"
+              />
+            </div>
             <div className="paragraph-item">
               <p>
                 {" "}

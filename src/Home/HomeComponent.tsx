@@ -75,24 +75,26 @@ export const HomeComponent: React.FC = () => {
         </div>
         <div className="col">
           <div className="home-right-side">
-            <div>
-              <img
-                className="home-image"
-                src={HomeImage}
-                alt="Featured Scultpure"
-              />
-            </div>
-            <div>
-              <img
-                className="sub-image left-image"
-                src={SubImageTwo}
-                alt="Coffee Mug"
-              />
-              <img
-                className="sub-image right-image"
-                src={SubImageOne}
-                alt="Platter"
-              />
+            <div className="home-image-group">
+              <div className="main-image">
+                <img
+                  className="home-image"
+                  src={HomeImage}
+                  alt="Featured Scultpure"
+                />
+              </div>
+              <div className="sub-image-group">
+                <img
+                  className="sub-image left-image"
+                  src={SubImageTwo}
+                  alt="Coffee Mug"
+                />
+                <img
+                  className="sub-image right-image"
+                  src={SubImageOne}
+                  alt="Platter"
+                />
+              </div>
             </div>
           </div>
         </div>
