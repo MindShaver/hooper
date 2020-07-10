@@ -194,4 +194,8 @@
   .home-container .mobile-hero {
     display: flex;
   }
+
+  .home-container .mobile-home-image {
+    height: 250px;
+  }
 }
