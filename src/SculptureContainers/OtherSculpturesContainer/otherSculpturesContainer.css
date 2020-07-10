@@ -7,28 +7,34 @@
   padding-top: 50px;
 }
 
-.inner-row {
+.other-sculptures-container .inner-row {
   display: flex;
 }
 
-.other-sculptures-row {
+.other-sculptures-container .other-sculptures-row {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 18%;
+  padding-top: 7%;
 }
 
-.other-sculptures-col {
+.other-sculptures-container .other-sculptures-col {
   flex-basis: 100%;
 }
 
-.flex-container {
+.other-sculptures-container .flex-container {
   width: 95%;
 }
 
-.other-sculptures-item {
+.other-sculptures-container .other-sculptures-item {
   text-align: center;
   margin-bottom: 20px;
   margin-right: 20px;
+}
+
+.other-sculptures-container .single-image {
+  width: 40%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -36,7 +42,7 @@
     width: 95%;
     min-height: 95%;
   }
-  .inner-row {
+  .other-sculptures-container .inner-row {
     flex-direction: column;
   }
 }

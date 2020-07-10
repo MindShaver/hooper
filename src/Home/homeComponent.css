@@ -11,22 +11,22 @@
   font-size: 42px;
 }
 
-.home-image {
+.home-container .home-image {
   width: 82%;
   -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
 }
 
-.row {
+.home-container .row {
   display: flex;
 }
 
-.col {
+.home-container .col {
   flex-basis: 100%;
 }
 
-.home-left-side {
+.home-container .home-left-side {
   display: flex;
   flex-direction: column;
   font-size: 14px;
@@ -37,81 +37,81 @@
   margin-top: 20px;
 }
 
-.home-right-side {
+.home-container .home-right-side {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
 
-.home-image-group {
+.home-container .home-image-group {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.main-image {
+.home-container .main-image {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sub-image-group {
+.home-container .sub-image-group {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 5px;
 }
 
-.header-group {
+.home-container .header-group {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Roboto", sans-serif;
 }
 
-.divider {
+.home-container .divider {
   height: 2px;
   width: 200px;
   background-color: black;
   margin-top: 10px;
 }
 
-.sub-image {
+.home-container .sub-image {
   width: 40%;
   margin-top: 5px;
 }
 
-.left-image {
+.home-container .left-image {
   margin-right: 10px;
   -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
 }
 
-.right-image {
+.home-container .right-image {
   -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.75);
 }
 
-.button-group {
+.home-container .button-group {
   margin-top: 40px;
   display: flex;
 }
 
-.mobile-hero {
+.home-container .mobile-hero {
   width: 100%;
   display: none;
 }
 
-.mobile-home-image {
+.home-container .mobile-home-image {
   width: 90%;
   margin: 10px auto;
 }
 
-.etsy-button {
+.home-container .etsy-button {
   width: 180px;
   height: 60px;
   font-size: 16px;
@@ -130,7 +130,7 @@
   border-radius: 5px;
 }
 
-.insta-button {
+.home-container .insta-button {
   width: 180px;
   height: 60px;
   font-size: 16px;
@@ -149,19 +149,23 @@
   border-radius: 5px;
 }
 
-.insta-button:hover {
+.home-container .insta-button:hover {
   cursor: pointer;
   background-color: rgb(23, 50, 206);
 }
 
-.button-group a {
+.home-container .button-group a {
   text-decoration: none;
   margin-right: 20px;
 }
 
-.etsy-button:hover {
+.home-container .etsy-button:hover {
   cursor: pointer;
   background-color: rgb(15, 136, 66);
+}
+
+.home-container .paragraph-item {
+  padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -170,24 +174,24 @@
     height: 100%;
   }
 
-  .row {
+  .home-container .row {
     flex-direction: column;
   }
 
-  .button-group {
+  .home-container .button-group {
     flex-direction: column;
   }
 
-  .insta-button {
+  .home-container .insta-button {
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
-  .home-right-side {
+  .home-container .home-right-side {
     display: none;
   }
 
-  .mobile-hero {
+  .home-container .mobile-hero {
     display: flex;
   }
 }

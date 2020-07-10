@@ -7,25 +7,27 @@
   padding-top: 50px;
 }
 
-.inner-row {
+.accalia-container .inner-row {
   display: flex;
 }
 
-.accalia-row {
+.accalia-container .accalia-row {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 16%;
+  padding-top: 6%;
 }
 
-.accalia-col {
+.accalia-container .accalia-col {
   flex-basis: 100%;
 }
 
-.flex-container {
+.accalia-container .flex-container {
   width: 95%;
 }
 
-.accalia-item {
+.accalia-container .accalia-item {
   text-align: center;
   margin-bottom: 20px;
   margin-right: 20px;
@@ -36,7 +38,7 @@
     width: 95%;
     min-height: 95%;
   }
-  .inner-row {
+  .accalia-container .inner-row {
     flex-direction: column;
   }
 }

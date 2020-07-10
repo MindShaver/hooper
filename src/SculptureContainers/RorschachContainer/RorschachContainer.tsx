@@ -1,11 +1,9 @@
 import React from "react";
 import "./rorschachContainer.css";
-import HelpYourself from "../../assets/images/sculptures/help-yourself.png";
-import SomberSomeone from "../../assets/images/sculptures/somber-someone.png";
-import BFA from "../../assets/images/sculptures/bfa-senior-exhibition.png";
-import FoundObject from "../../assets/images/sculptures/found-object-insects.png";
-import Accalia from "../../assets/images/sculptures/accalia.png";
-import Heisenvictus from "../../assets/images/sculptures/heisenvictus.png";
+import Presager from "../../assets/images/rorschach/presager.png";
+import Erethizon from "../../assets/images/rorschach/erethizon-dos.png";
+import Convergent from "../../assets/images/rorschach/convergent-crown.png";
+import Bubonic from "../../assets/images/rorschach/bubonic-queen.png";
 
 export const RorschachContainer: React.FC = () => {
   return (
@@ -14,16 +12,38 @@ export const RorschachContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="rorschach-item">
-              <img src={HelpYourself} />
-              <p>"Help Yourself"</p>
-              <p>Series</p>
+              <img src={Presager} />
+              <p>
+                <em>Presager</em>
+              </p>
             </div>
           </li>
           <li>
             <div className="rorschach-item">
-              <img src={SomberSomeone} />
-              <p>"Somber Someone"</p>
-              <p>Series</p>
+              <img src={Erethizon} />
+              <p>
+                <em>Erethizon Dos</em>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className="rorschach-item">
+              <img src={Convergent} />
+              <p>
+                <em>Convergent Crown</em>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div className="rorschach-row">
+        <ul className="inner-row">
+          <li>
+            <div className="rorschach-item">
+              <img src={Bubonic} />
+              <p>
+                <em>Bubonic Queen</em>
+              </p>
             </div>
           </li>
         </ul>

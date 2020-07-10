@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.carousel {
+.platter-container .carousel {
   width: 600px;
 }
 
@@ -19,7 +19,7 @@
     min-height: 95%;
   }
 
-  .carousel {
+  .platter-container .carousel {
     width: 300px !important;
   }
 }

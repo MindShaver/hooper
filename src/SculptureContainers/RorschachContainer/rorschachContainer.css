@@ -7,25 +7,25 @@
   padding-top: 50px;
 }
 
-.inner-row {
+.rorschach-container .inner-row {
   display: flex;
 }
 
-.rorschach-row {
+.rorschach-container .rorschach-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.rorschach-col {
+.rorschach-container .rorschach-col {
   flex-basis: 100%;
 }
 
-.flex-container {
+.rorschach-container .flex-container {
   width: 95%;
 }
 
-.rorschach-item {
+.rorschach-container .rorschach-item {
   text-align: center;
   margin-bottom: 20px;
   margin-right: 20px;
@@ -36,7 +36,7 @@
     width: 95%;
     min-height: 95%;
   }
-  .inner-row {
+  .rorschach-container .inner-row {
     flex-direction: column;
   }
 }

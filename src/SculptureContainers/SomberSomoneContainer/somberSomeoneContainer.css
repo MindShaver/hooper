@@ -7,25 +7,25 @@
   padding-top: 50px;
 }
 
-.inner-row {
+.somber-someone-container .inner-row {
   display: flex;
 }
 
-.somber-someone-row {
+.somber-someone-container .somber-someone-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.somber-someone-col {
+.somber-someone-container .somber-someone-col {
   flex-basis: 100%;
 }
 
-.flex-container {
+.somber-someone-container .flex-container {
   width: 95%;
 }
 
-.somber-someone-item {
+.somber-someone-container .somber-someone-item {
   text-align: center;
   margin-bottom: 20px;
   margin-right: 20px;
@@ -36,7 +36,7 @@
     width: 95%;
     min-height: 95%;
   }
-  .inner-row {
+  .somber-someone-container .inner-row {
     flex-direction: column;
   }
 }

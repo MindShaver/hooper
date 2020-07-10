@@ -1,11 +1,10 @@
 import React from "react";
 import "./helpYourselfContainer.css";
-import HelpYourself from "../../assets/images/sculptures/help-yourself.png";
-import SomberSomeone from "../../assets/images/sculptures/somber-someone.png";
-import BFA from "../../assets/images/sculptures/bfa-senior-exhibition.png";
-import FoundObject from "../../assets/images/sculptures/found-object-insects.png";
-import Accalia from "../../assets/images/sculptures/accalia.png";
-import Heisenvictus from "../../assets/images/sculptures/heisenvictus.png";
+import CouldntResist from "../../assets/images/help-yourself/couldnt-resist.png";
+import Comfort from "../../assets/images/help-yourself/comfort.png";
+import Faith from "../../assets/images/help-yourself/faith.png";
+import HelpYourself from "../../assets/images/help-yourself/help-yourself.png";
+import Marionette from "../../assets/images/help-yourself/marionette.png";
 
 export const HelpYourselfContainer: React.FC = () => {
   return (
@@ -14,16 +13,46 @@ export const HelpYourselfContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="help-yourself-item">
-              <img src={HelpYourself} />
-              <p>"Help Yourself"</p>
-              <p>Series</p>
+              <img src={CouldntResist} />
+              <p>
+                <em>Just Couldn't Resist</em>
+              </p>
             </div>
           </li>
           <li>
             <div className="help-yourself-item">
-              <img src={SomberSomeone} />
-              <p>"Somber Someone"</p>
-              <p>Series</p>
+              <img src={Comfort} />
+              <p>
+                <em>Comfort</em>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className="help-yourself-item">
+              <img src={Faith} />
+              <p>
+                <em>Faith</em>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div className="help-yourself-row">
+        <ul className="inner-row">
+          <li>
+            <div className="help-yourself-item">
+              <img src={HelpYourself} />
+              <p>
+                <em>Help Yourself</em>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className="help-yourself-item">
+              <img src={Marionette} />
+              <p>
+                <em>Marionette</em>
+              </p>
             </div>
           </li>
         </ul>

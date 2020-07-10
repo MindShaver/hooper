@@ -7,25 +7,27 @@
   padding-top: 50px;
 }
 
-.inner-row {
+.found-object-container .inner-row {
   display: flex;
 }
 
-.found-object-row {
+.found-object-container .found-object-row {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 13%;
+  padding-top: 5%;
 }
 
-.found-object-col {
+.found-object-container .found-object-col {
   flex-basis: 100%;
 }
 
-.flex-container {
+.found-object-container .flex-container {
   width: 95%;
 }
 
-.found-object-item {
+.found-object-container .found-object-item {
   text-align: center;
   margin-bottom: 20px;
   margin-right: 20px;
@@ -36,7 +38,7 @@
     width: 95%;
     min-height: 95%;
   }
-  .inner-row {
+  .found-object-container .inner-row {
     flex-direction: column;
   }
 }

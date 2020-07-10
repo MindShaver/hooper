@@ -7,25 +7,25 @@
   padding-top: 50px;
 }
 
-.inner-row {
+.bfa-container .inner-row {
   display: flex;
 }
 
-.bfa-row {
+.bfa-container .bfa-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.bfa-col {
+.bfa-container .bfa-col {
   flex-basis: 100%;
 }
 
-.flex-container {
+.bfa-container .flex-container {
   width: 95%;
 }
 
-.bfa-item {
+.bfa-container .bfa-item {
   text-align: center;
   margin-bottom: 20px;
   margin-right: 20px;
@@ -36,7 +36,7 @@
     width: 95%;
     min-height: 95%;
   }
-  .inner-row {
+  .bfa-container .inner-row {
     flex-direction: column;
   }
 }

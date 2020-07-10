@@ -7,28 +7,34 @@
   padding-top: 50px;
 }
 
-.inner-row {
+.like-no-tomorrow-container .inner-row {
   display: flex;
 }
 
-.like-no-tomorrow-row {
+.like-no-tomorrow-container .like-no-tomorrow-row {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3%;
+  padding-top: 2%;
 }
 
-.like-no-tomorrow-col {
+.like-no-tomorrow-container .like-no-tomorrow-col {
   flex-basis: 100%;
 }
 
-.flex-container {
+.like-no-tomorrow-container .flex-container {
   width: 95%;
 }
 
-.like-no-tomorrow-item {
+.like-no-tomorrow-container .like-no-tomorrow-item {
   text-align: center;
   margin-bottom: 20px;
   margin-right: 20px;
+}
+
+.single-image {
+  width: 70%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -36,7 +42,7 @@
     width: 95%;
     min-height: 95%;
   }
-  .inner-row {
+  .like-no-tomorrow-container .inner-row {
     flex-direction: column;
   }
 }

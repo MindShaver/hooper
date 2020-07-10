@@ -6,7 +6,7 @@ export const AboutContainer = () => {
   return (
     <div className="about-container">
       <div className="row">
-        <div className="col">
+        <div className="left-col">
           <div className="left-side-group">
             <div className="mobile-image-group">
               <img
@@ -60,7 +60,7 @@ export const AboutContainer = () => {
             </div>
           </div>
         </div>
-        <div className="col">
+        <div className="right-col">
           <div className="right-side-group">
             <div className="image-group">
               <img

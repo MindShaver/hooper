@@ -7,40 +7,40 @@
   font-family: "Roboto", sans-serif;
 }
 
-.contact-message {
+.form-container .contact-message {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
 }
 
-.form {
+.form-container .form {
   margin: 20px auto;
 }
 
-input {
+.form-container input {
   width: 410px;
   height: 30px;
   display: block;
   padding: 10px;
 }
 
-textarea {
+.form-container textarea {
   width: 410px;
   height: 60px;
   display: block;
   padding: 10px;
 }
 
-.message-group {
+.form-container .message-group {
   margin-top: 20px;
 }
 
-.sub-message {
+.form-container .sub-message {
   margin-top: 20px;
 }
 
-.submit-button {
+.form-container .submit-button {
   width: 410px;
   height: 60px;
   margin-top: 20px;
@@ -57,21 +57,21 @@ textarea {
     height: 100%;
   }
 
-  .form {
+  .form-container .form {
     width: 95%;
     margin-bottom: 36%;
   }
 
-  .sub-message {
+  .form-container .sub-message {
     text-align: center;
   }
 
-  .submit-button {
+  .form-container .submit-button {
     width: 95%;
     height: 60px;
   }
 
-  input {
+  .form-container input {
     width: 95%;
     height: 60px;
     display: block;
@@ -79,7 +79,7 @@ textarea {
     padding: 10px;
   }
 
-  textarea {
+  .form-container textarea {
     width: 95%;
     height: 100px;
     display: block;

@@ -39,7 +39,12 @@ export const Navbar: React.FC = () => {
           <div className="nav-item">
             <div className="logo">
               <Link to="/">
-                <img className="logo-image" src={LogoImage} alt="Hooper Logo" />
+                <img
+                  className="logo-image"
+                  src={LogoImage}
+                  alt="Hooper Logo"
+                  onClick={() => setShowSubMenu(false)}
+                />
               </Link>
             </div>
           </div>
