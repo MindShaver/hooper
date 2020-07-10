@@ -1,4 +1,4 @@
-.sculpture-container {
+.found-object-container {
   width: 1080px;
   height: 100%;
   background-color: white;
@@ -11,18 +11,13 @@
   display: flex;
 }
 
-.series-link {
-  text-decoration: none;
-  color: black;
-}
-
-.sculpture-row {
+.found-object-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.sculpture-col {
+.found-object-col {
   flex-basis: 100%;
 }
 
@@ -30,14 +25,14 @@
   width: 95%;
 }
 
-.sculpture-item {
+.found-object-item {
   text-align: center;
   margin-bottom: 20px;
   margin-right: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-  .sculpture-container {
+  .found-object-container {
     width: 95%;
     min-height: 95%;
   }

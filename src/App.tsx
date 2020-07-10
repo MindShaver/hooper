@@ -11,6 +11,16 @@ import { HomeComponent } from "./Home/HomeComponent";
 import { MugCarousel } from "./MugCarousel/MugCarousel";
 import { MugContainer } from "./MugContainer/MugContainer";
 import { PlatterContainer } from "./PlatterContainer/PlatterContainer";
+import { AccaliaContainer } from "./SculptureContainers/AccaliaContainer/AccaliaContainer";
+import { BFAContainer } from "./SculptureContainers/BFAContainer/BFAContainer";
+import { FoundObjectContainer } from "./SculptureContainers/FoundObjectContainer/FoundObjectContainer";
+import { HeisenvictusContainer } from "./SculptureContainers/HeisenvictusContainer/HeisenvictusContainer";
+import { HelpYourselfContainer } from "./SculptureContainers/HelpYourselfContainer/HelpYourselfContainer";
+import { LikeNoTomorrowContainer } from "./SculptureContainers/LikeNoTomorrowContainer/LikeNoTomorrowContainer";
+import { OtherSculpturesContainer } from "./SculptureContainers/OtherSculpturesContainer/OtherSculpturesContainer";
+import { ProcessPhotosContainer } from "./SculptureContainers/ProcessPhotosContainer/ProcessPhotosContainer";
+import { RorschachContainer } from "./SculptureContainers/RorschachContainer/RorschachContainer";
+import { SomberSomeoneContainer } from "./SculptureContainers/SomberSomoneContainer/SomberSomoneContainer";
 
 function App() {
   return (
@@ -25,6 +35,40 @@ function App() {
           <Route path="/contact" exact component={ContactContainer} />
           <Route path="/mugs" exact component={MugContainer} />
           <Route path="/platters-and-more" exact component={PlatterContainer} />
+          <Route path="/accalia" exact component={AccaliaContainer} />
+          <Route path="/bfa-senior-exhibition" exact component={BFAContainer} />
+          <Route
+            path="/found-object-insects"
+            exact
+            component={FoundObjectContainer}
+          />
+          <Route path="/heisenvictus" exact component={HeisenvictusContainer} />
+          <Route
+            path="/help-yourself"
+            exact
+            component={HelpYourselfContainer}
+          />
+          <Route
+            path="/like-no-tomorrow"
+            exact
+            component={LikeNoTomorrowContainer}
+          />
+          <Route
+            path="/other-sculptures"
+            exact
+            component={OtherSculpturesContainer}
+          />
+          <Route
+            path="/process-photos"
+            exact
+            component={ProcessPhotosContainer}
+          />
+          <Route path="/rorschach" exact component={RorschachContainer} />
+          <Route
+            path="/somber-someone"
+            exact
+            component={SomberSomeoneContainer}
+          />
         </Switch>
         <Footer />
       </Router>

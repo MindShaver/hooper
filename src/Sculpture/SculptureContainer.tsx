@@ -10,6 +10,7 @@ import LikeNoTomorrow from "../assets/images/sculptures/like-no-tomorrow.png";
 import Rorschach from "../assets/images/sculptures/rorschach.png";
 import Other from "../assets/images/sculptures/other-sculptures.png";
 import Process from "../assets/images/sculptures/process-photos.png";
+import { Link } from "react-router-dom";
 
 export const SculptureContainer: React.FC = () => {
   return (
@@ -18,48 +19,29 @@ export const SculptureContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="sculpture-item">
-              <img src={HelpYourself} />
-              <p>"Help Yourself"</p>
-              <p>Series</p>
+              <Link className="series-link" to={"/help-yourself"}>
+                <img src={HelpYourself} />
+                <p>"Help Yourself"</p>
+                <p>Series</p>
+              </Link>
             </div>
           </li>
           <li>
             <div className="sculpture-item">
-              <img src={SomberSomeone} />
-              <p>"Somber Someone"</p>
-              <p>Series</p>
+              <Link className="series-link" to={"/somber-someone"}>
+                <img src={SomberSomeone} />
+                <p>"Somber Someone"</p>
+                <p>Series</p>
+              </Link>
             </div>
           </li>
           <li>
             <div className="sculpture-item">
-              <img src={BFA} />
-              <p>BFA Senior Exhibition</p>
-              <p>&nbsp;</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div className="sculpture-row">
-        <ul className="inner-row">
-          <li>
-            <div className="sculpture-item">
-              <img src={FoundObject} />
-              <p>Found Object Insects</p>
-              <p>&nbsp;</p>
-            </div>
-          </li>
-          <li>
-            <div className="sculpture-item">
-              <img src={Accalia} />
-              <p>Accalia</p>
-              <p>&nbsp;</p>
-            </div>
-          </li>
-          <li>
-            <div className="sculpture-item">
-              <img src={Heisenvictus} />
-              <p>Heisenvictus</p>
-              <p>&nbsp;</p>
+              <Link className="series-link" to={"/bfa-senior-exhibition"}>
+                <img src={BFA} />
+                <p>BFA Senior Exhibition</p>
+                <p>&nbsp;</p>
+              </Link>
             </div>
           </li>
         </ul>
@@ -68,23 +50,29 @@ export const SculptureContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="sculpture-item">
-              <img src={LikeNoTomorrow} />
-              <p>Like No Tomorrow</p>
-              <p>&nbsp;</p>
+              <Link className="series-link" to={"/found-object-insects"}>
+                <img src={FoundObject} />
+                <p>Found Object Insects</p>
+                <p>&nbsp;</p>
+              </Link>
             </div>
           </li>
           <li>
             <div className="sculpture-item">
-              <img src={Rorschach} />
-              <p>"Rorschach"</p>
-              <p>Series</p>
+              <Link className="series-link" to={"/accalia"}>
+                <img src={Accalia} />
+                <p>Accalia</p>
+                <p>&nbsp;</p>
+              </Link>
             </div>
           </li>
           <li>
             <div className="sculpture-item">
-              <img src={Other} />
-              <p>Other Sculptures</p>
-              <p>&nbsp;</p>
+              <Link className="series-link" to={"/heisenvictus"}>
+                <img src={Heisenvictus} />
+                <p>Heisenvictus</p>
+                <p>&nbsp;</p>
+              </Link>
             </div>
           </li>
         </ul>
@@ -93,9 +81,42 @@ export const SculptureContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="sculpture-item">
-              <img src={Process} />
-              <p>Process Photos</p>
-              <p>&nbsp;</p>
+              <Link className="series-link" to={"/like-no-tomorrow"}>
+                <img src={LikeNoTomorrow} />
+                <p>Like No Tomorrow</p>
+                <p>&nbsp;</p>
+              </Link>
+            </div>
+          </li>
+          <li>
+            <div className="sculpture-item">
+              <Link className="series-link" to={"/rorschach"}>
+                <img src={Rorschach} />
+                <p>"Rorschach"</p>
+                <p>Series</p>
+              </Link>
+            </div>
+          </li>
+          <li>
+            <div className="sculpture-item">
+              <Link className="series-link" to={"/other-sculptures"}>
+                <img src={Other} />
+                <p>Other Sculptures</p>
+                <p>&nbsp;</p>
+              </Link>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div className="sculpture-row">
+        <ul className="inner-row">
+          <li>
+            <div className="sculpture-item">
+              <Link className="series-link" to={"/process-photos"}>
+                <img src={Process} />
+                <p>Process Photos</p>
+                <p>&nbsp;</p>
+              </Link>
             </div>
           </li>
         </ul>

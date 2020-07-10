@@ -1,4 +1,4 @@
-.sculpture-container {
+.heisenvictus-container {
   width: 1080px;
   height: 100%;
   background-color: white;
@@ -11,18 +11,13 @@
   display: flex;
 }
 
-.series-link {
-  text-decoration: none;
-  color: black;
-}
-
-.sculpture-row {
+.heisenvictus-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.sculpture-col {
+.heisenvictus-col {
   flex-basis: 100%;
 }
 
@@ -30,14 +25,14 @@
   width: 95%;
 }
 
-.sculpture-item {
+.heisenvictus-item {
   text-align: center;
   margin-bottom: 20px;
   margin-right: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-  .sculpture-container {
+  .heisenvictus-container {
     width: 95%;
     min-height: 95%;
   }
