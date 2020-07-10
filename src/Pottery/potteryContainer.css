@@ -5,3 +5,76 @@
   margin: 0 auto;
   border-radius: 10px;
 }
+
+.main-group p {
+  text-align: center;
+}
+
+.pottery-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.pottery-col {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.info-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.first-info-item {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.second-info-item {
+  width: 300px;
+}
+
+.info-group a {
+  color: black;
+}
+
+.main-group a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .pottery-container {
+    width: 95%;
+    height: 100%;
+  }
+
+  .pottery-row {
+    flex-direction: column;
+  }
+
+  .main-group {
+    flex-direction: column;
+  }
+
+  .info-group {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .platter-group {
+    margin-top: 20px;
+  }
+}

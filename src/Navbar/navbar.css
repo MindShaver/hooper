@@ -20,6 +20,10 @@ ul {
   border-radius: 10px;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .nav-row {
   display: flex;
   flex-direction: row;
@@ -84,11 +88,47 @@ ul {
     width: 95%;
   }
 
-  .left-nav {
+  .mobile-nav {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .link {
     display: none;
   }
 
   .right-nav {
     display: none;
+  }
+
+  .sub-menu {
+    width: 95%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 10px;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+  }
+
+  .mobile-nav {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .mobile-link {
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+    letter-spacing: 0.1rem;
   }
 }

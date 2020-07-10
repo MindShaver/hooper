@@ -8,6 +8,9 @@ import { PotteryContainer } from "./Pottery/PotteryContainer";
 import { AboutContainer } from "./About/AboutContainer";
 import { ContactContainer } from "./Contact/ContactContainer";
 import { HomeComponent } from "./Home/HomeComponent";
+import { MugCarousel } from "./MugCarousel/MugCarousel";
+import { MugContainer } from "./MugContainer/MugContainer";
+import { PlatterContainer } from "./PlatterContainer/PlatterContainer";
 
 function App() {
   return (
@@ -20,6 +23,8 @@ function App() {
           <Route path="/pottery" exact component={PotteryContainer} />
           <Route path="/about" exact component={AboutContainer} />
           <Route path="/contact" exact component={ContactContainer} />
+          <Route path="/mugs" exact component={MugContainer} />
+          <Route path="/platters-and-more" exact component={PlatterContainer} />
         </Switch>
         <Footer />
       </Router>
