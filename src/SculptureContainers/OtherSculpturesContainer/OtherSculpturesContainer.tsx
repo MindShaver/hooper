@@ -1,6 +1,5 @@
 import React from "react";
 import "./otherSculpturesContainer.css";
-import NoName from "../../assets/images/other-sculptures/no-name.png";
 
 export const OtherSculpturesContainer: React.FC = () => {
   return (
@@ -9,7 +8,13 @@ export const OtherSculpturesContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="other-sculptures-item">
-              <img className="single-image" src={NoName} />
+              <img
+                className="single-image"
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/other-sculptures/no-name.png"
+                }
+              />
               <p>
                 <em>No Name</em>
               </p>

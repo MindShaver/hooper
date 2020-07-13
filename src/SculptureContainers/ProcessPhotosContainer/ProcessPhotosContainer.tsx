@@ -1,6 +1,5 @@
 import React from "react";
 import "./processPhotosContainer.css";
-import NoName from "../../assets/images/process-photos/no-name.png";
 
 export const ProcessPhotosContainer: React.FC = () => {
   return (
@@ -9,7 +8,12 @@ export const ProcessPhotosContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="process-photos-item">
-              <img className="process-image" src={NoName} />
+              <img
+                className="process-image"
+                src={
+                  process.env.PUBLIC_URL + "/images/process-photos/no-name.png"
+                }
+              />
               <p>
                 <em>No Name</em>
               </p>

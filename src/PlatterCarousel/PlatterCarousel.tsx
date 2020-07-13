@@ -1,10 +1,5 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import ImageOne from "../assets/images/platter-carousel/platter-1.png";
-import ImageTwo from "../assets/images/platter-carousel/platter-2.png";
-import ImageThree from "../assets/images/platter-carousel/platter-3.png";
-import ImageFour from "../assets/images/platter-carousel/platter-4.png";
-import ImageFive from "../assets/images/platter-carousel/platter-5.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./platterCarousel.css";
 
@@ -13,19 +8,39 @@ export const PlatterCarousel = () => {
     <div className="carosuel-wrapper">
       <Carousel infiniteLoop useKeyboardArrows autoPlay>
         <div>
-          <img src={ImageOne} />
+          <img
+            src={
+              process.env.PUBLIC_URL + "/images/platter-carousel/platter-1.png"
+            }
+          />
         </div>
         <div>
-          <img src={ImageTwo} />
+          <img
+            src={
+              process.env.PUBLIC_URL + "/images/platter-carousel/platter-2.png"
+            }
+          />
         </div>
         <div>
-          <img src={ImageThree} />
+          <img
+            src={
+              process.env.PUBLIC_URL + "/images/platter-carousel/platter-3.png"
+            }
+          />
         </div>
         <div>
-          <img src={ImageFour} />
+          <img
+            src={
+              process.env.PUBLIC_URL + "/images/platter-carousel/platter-4.png"
+            }
+          />
         </div>
         <div>
-          <img src={ImageFive} />
+          <img
+            src={
+              process.env.PUBLIC_URL + "/images/platter-carousel/platter-5.png"
+            }
+          />
         </div>
       </Carousel>
     </div>

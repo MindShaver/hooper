@@ -1,7 +1,5 @@
 import React from "react";
 import "./foundObjectContainer.css";
-import Coleoptera from "../../assets/images/found-object-insects/coleoptera.png";
-import Anisoptera from "../../assets/images/found-object-insects/anisoptera.png";
 
 export const FoundObjectContainer: React.FC = () => {
   return (
@@ -10,7 +8,12 @@ export const FoundObjectContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="found-object-item">
-              <img src={Coleoptera} />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/found-object-insects/coleoptera.png"
+                }
+              />
               <p>
                 <em>Anisoptera</em>
               </p>
@@ -18,7 +21,12 @@ export const FoundObjectContainer: React.FC = () => {
           </li>
           <li>
             <div className="found-object-item">
-              <img src={Anisoptera} />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/found-object-insects/anisoptera.png"
+                }
+              />
               <p>
                 <em>Coleoptera</em>
               </p>

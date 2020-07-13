@@ -1,9 +1,5 @@
 import React from "react";
 import "./bfaContainer.css";
-import LowSpirits from "../../assets/images/bfa-exhibition/low-spirits.png";
-import DesertHope from "../../assets/images/bfa-exhibition/desert-hope.png";
-import Loom from "../../assets/images/bfa-exhibition/loom.png";
-import StrangeLoop from "../../assets/images/bfa-exhibition/strange-loop.png";
 
 export const BFAContainer: React.FC = () => {
   return (
@@ -12,7 +8,12 @@ export const BFAContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="bfa-item">
-              <img src={LowSpirits} />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/bfa-exhibition/low-spirits.png"
+                }
+              />
               <p>
                 <em>Low Spirits</em>
               </p>
@@ -20,7 +21,12 @@ export const BFAContainer: React.FC = () => {
           </li>
           <li>
             <div className="bfa-item">
-              <img src={DesertHope} />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/bfa-exhibition/desert-hope.png"
+                }
+              />
               <p>
                 <em>Desert Hope</em>
               </p>
@@ -32,7 +38,9 @@ export const BFAContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="bfa-item">
-              <img src={Loom} />
+              <img
+                src={process.env.PUBLIC_URL + "/images/bfa-exhibition/loom.png"}
+              />
               <p>
                 <em>Loom</em>
               </p>
@@ -40,7 +48,12 @@ export const BFAContainer: React.FC = () => {
           </li>
           <li>
             <div className="bfa-item">
-              <img src={StrangeLoop} />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/bfa-exhibition/strange-loop.png"
+                }
+              />
               <p>
                 <em>Strange Loop</em>
               </p>

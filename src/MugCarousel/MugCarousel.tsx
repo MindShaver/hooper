@@ -1,10 +1,5 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import ImageOne from "../assets/images/mug-carousel/mug-1.png";
-import ImageTwo from "../assets/images/mug-carousel/mug-2.png";
-import ImageThree from "../assets/images/mug-carousel/mug-3.png";
-import ImageFour from "../assets/images/mug-carousel/mug-4.png";
-import ImageFive from "../assets/images/mug-carousel/mug-5.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./mugCarousel.css";
 
@@ -13,19 +8,29 @@ export const MugCarousel = () => {
     <div className="carosuel-wrapper">
       <Carousel infiniteLoop useKeyboardArrows autoPlay>
         <div>
-          <img src={ImageOne} />
+          <img
+            src={process.env.PUBLIC_URL + "/images/mug-carousel/mug-1.png"}
+          />
         </div>
         <div>
-          <img src={ImageTwo} />
+          <img
+            src={process.env.PUBLIC_URL + "/images/mug-carousel/mug-2.png"}
+          />
         </div>
         <div>
-          <img src={ImageThree} />
+          <img
+            src={process.env.PUBLIC_URL + "/images/mug-carousel/mug-3.png"}
+          />
         </div>
         <div>
-          <img src={ImageFour} />
+          <img
+            src={process.env.PUBLIC_URL + "/images/mug-carousel/mug-4.png"}
+          />
         </div>
         <div>
-          <img src={ImageFive} />
+          <img
+            src={process.env.PUBLIC_URL + "/images/mug-carousel/mug-5.png"}
+          />
         </div>
       </Carousel>
     </div>

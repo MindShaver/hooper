@@ -1,10 +1,4 @@
 import React from "react";
-import FiftyFifty from "../../assets/images/somber-someone/fifty-fifty.png";
-import Atlas from "../../assets/images/somber-someone/atlas.png";
-import Penitence from "../../assets/images/somber-someone/penitence.png";
-import Poe from "../../assets/images/somber-someone/poe.png";
-import WalkThePlank from "../../assets/images/somber-someone/walk-the-plank.png";
-import Splinter from "../../assets/images/somber-someone/walk-the-plank.png";
 import "./somberSomeoneContainer.css";
 
 export const SomberSomeoneContainer: React.FC = () => {
@@ -14,7 +8,12 @@ export const SomberSomeoneContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="somber-someone-item">
-              <img src={FiftyFifty} />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/somber-someone/fifty-fifty.png"
+                }
+              />
               <p>
                 <em>Fifty-Fifty</em>
               </p>
@@ -22,7 +21,11 @@ export const SomberSomeoneContainer: React.FC = () => {
           </li>
           <li>
             <div className="somber-someone-item">
-              <img src={Atlas} />
+              <img
+                src={
+                  process.env.PUBLIC_URL + "/images/somber-someone/atlas.png"
+                }
+              />
               <p>
                 <em>Atlas</em>
               </p>
@@ -30,7 +33,12 @@ export const SomberSomeoneContainer: React.FC = () => {
           </li>
           <li>
             <div className="somber-someone-item">
-              <img src={Penitence} />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/somber-someone/penitence.png"
+                }
+              />
               <p>
                 <em>Penitence is Bliss</em>
               </p>
@@ -42,7 +50,9 @@ export const SomberSomeoneContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="somber-someone-item">
-              <img src={Poe} />
+              <img
+                src={process.env.PUBLIC_URL + "/images/somber-someone/poe.png"}
+              />
               <p>
                 <em>Poe</em>
               </p>
@@ -50,7 +60,12 @@ export const SomberSomeoneContainer: React.FC = () => {
           </li>
           <li>
             <div className="somber-someone-item">
-              <img src={WalkThePlank} />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/somber-someone/walk-the-plank.png"
+                }
+              />
               <p>
                 <em>Walk the Plank</em>
               </p>
@@ -58,7 +73,12 @@ export const SomberSomeoneContainer: React.FC = () => {
           </li>
           <li>
             <div className="somber-someone-item">
-              <img src={Splinter} />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/somber-someone/walk-the-plank.png"
+                }
+              />
               <p>
                 <em>Splinter</em>
               </p>

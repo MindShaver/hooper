@@ -1,10 +1,5 @@
 import React from "react";
 import "./helpYourselfContainer.css";
-import CouldntResist from "../../assets/images/help-yourself/couldnt-resist.png";
-import Comfort from "../../assets/images/help-yourself/comfort.png";
-import Faith from "../../assets/images/help-yourself/faith.png";
-import HelpYourself from "../../assets/images/help-yourself/help-yourself.png";
-import Marionette from "../../assets/images/help-yourself/marionette.png";
 
 export const HelpYourselfContainer: React.FC = () => {
   return (
@@ -13,7 +8,12 @@ export const HelpYourselfContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="help-yourself-item">
-              <img src={CouldntResist} />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/help-yourself/couldnt-resist.png"
+                }
+              />
               <p>
                 <em>Just Couldn't Resist</em>
               </p>
@@ -21,7 +21,11 @@ export const HelpYourselfContainer: React.FC = () => {
           </li>
           <li>
             <div className="help-yourself-item">
-              <img src={Comfort} />
+              <img
+                src={
+                  process.env.PUBLIC_URL + "/images/help-yourself/comfort.png"
+                }
+              />
               <p>
                 <em>Comfort</em>
               </p>
@@ -29,7 +33,9 @@ export const HelpYourselfContainer: React.FC = () => {
           </li>
           <li>
             <div className="help-yourself-item">
-              <img src={Faith} />
+              <img
+                src={process.env.PUBLIC_URL + "/images/help-yourself/faith.png"}
+              />
               <p>
                 <em>Faith</em>
               </p>
@@ -41,7 +47,12 @@ export const HelpYourselfContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="help-yourself-item">
-              <img src={HelpYourself} />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/help-yourself/help-yourself.png"
+                }
+              />
               <p>
                 <em>Help Yourself</em>
               </p>
@@ -49,7 +60,12 @@ export const HelpYourselfContainer: React.FC = () => {
           </li>
           <li>
             <div className="help-yourself-item">
-              <img src={Marionette} />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/help-yourself/marionette.png"
+                }
+              />
               <p>
                 <em>Marionette</em>
               </p>

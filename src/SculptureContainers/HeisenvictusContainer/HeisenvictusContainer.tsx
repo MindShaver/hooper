@@ -1,6 +1,5 @@
 import React from "react";
 import "./heisenvictusContainer.css";
-import NoName from "../../assets/images/heisenvictus/no-name.png";
 
 export const HeisenvictusContainer: React.FC = () => {
   return (
@@ -9,7 +8,11 @@ export const HeisenvictusContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="heisenvictus-item">
-              <img src={NoName} />
+              <img
+                src={
+                  process.env.PUBLIC_URL + "/images/heisenvictus/no-name.png"
+                }
+              />
               <p>
                 <em>No Name</em>
               </p>

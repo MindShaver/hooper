@@ -1,15 +1,5 @@
 import React from "react";
 import "./sculptureContainer.css";
-import HelpYourself from "../assets/images/sculptures/help-yourself.png";
-import SomberSomeone from "../assets/images/sculptures/somber-someone.png";
-import BFA from "../assets/images/sculptures/bfa-senior-exhibition.png";
-import FoundObject from "../assets/images/sculptures/found-object-insects.png";
-import Accalia from "../assets/images/sculptures/accalia.png";
-import Heisenvictus from "../assets/images/sculptures/heisenvictus.png";
-import LikeNoTomorrow from "../assets/images/sculptures/like-no-tomorrow.png";
-import Rorschach from "../assets/images/sculptures/rorschach.png";
-import Other from "../assets/images/sculptures/other-sculptures.png";
-import Process from "../assets/images/sculptures/process-photos.png";
 import { Link } from "react-router-dom";
 
 export const SculptureContainer: React.FC = () => {
@@ -20,7 +10,12 @@ export const SculptureContainer: React.FC = () => {
           <li>
             <div className="sculpture-item">
               <Link className="series-link" to={"/help-yourself"}>
-                <img src={HelpYourself} />
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/images/sculptures/help-yourself.png"
+                  }
+                />
                 <p>"Help Yourself"</p>
                 <p>Series</p>
               </Link>
@@ -29,7 +24,12 @@ export const SculptureContainer: React.FC = () => {
           <li>
             <div className="sculpture-item">
               <Link className="series-link" to={"/somber-someone"}>
-                <img src={SomberSomeone} />
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/images/sculptures/somber-someone.png"
+                  }
+                />
                 <p>"Somber Someone"</p>
                 <p>Series</p>
               </Link>
@@ -38,7 +38,12 @@ export const SculptureContainer: React.FC = () => {
           <li>
             <div className="sculpture-item">
               <Link className="series-link" to={"/bfa-senior-exhibition"}>
-                <img src={BFA} />
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/images/sculptures/bfa-senior-exhibition.png"
+                  }
+                />
                 <p>BFA Senior Exhibition</p>
                 <p>&nbsp;</p>
               </Link>
@@ -51,7 +56,12 @@ export const SculptureContainer: React.FC = () => {
           <li>
             <div className="sculpture-item">
               <Link className="series-link" to={"/found-object-insects"}>
-                <img src={FoundObject} />
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/images/sculptures/found-object-insects.png"
+                  }
+                />
                 <p>Found Object Insects</p>
                 <p>&nbsp;</p>
               </Link>
@@ -60,7 +70,11 @@ export const SculptureContainer: React.FC = () => {
           <li>
             <div className="sculpture-item">
               <Link className="series-link" to={"/accalia"}>
-                <img src={Accalia} />
+                <img
+                  src={
+                    process.env.PUBLIC_URL + "/images/sculptures/accalia.png"
+                  }
+                />
                 <p>Accalia</p>
                 <p>&nbsp;</p>
               </Link>
@@ -69,7 +83,12 @@ export const SculptureContainer: React.FC = () => {
           <li>
             <div className="sculpture-item">
               <Link className="series-link" to={"/heisenvictus"}>
-                <img src={Heisenvictus} />
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/images/sculptures/heisenvictus.png"
+                  }
+                />
                 <p>Heisenvictus</p>
                 <p>&nbsp;</p>
               </Link>
@@ -82,7 +101,12 @@ export const SculptureContainer: React.FC = () => {
           <li>
             <div className="sculpture-item">
               <Link className="series-link" to={"/like-no-tomorrow"}>
-                <img src={LikeNoTomorrow} />
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/images/sculptures/like-no-tomorrow.png"
+                  }
+                />
                 <p>Like No Tomorrow</p>
                 <p>&nbsp;</p>
               </Link>
@@ -91,7 +115,11 @@ export const SculptureContainer: React.FC = () => {
           <li>
             <div className="sculpture-item">
               <Link className="series-link" to={"/rorschach"}>
-                <img src={Rorschach} />
+                <img
+                  src={
+                    process.env.PUBLIC_URL + "/images/sculptures/rorschach.png"
+                  }
+                />
                 <p>"Rorschach"</p>
                 <p>Series</p>
               </Link>
@@ -100,7 +128,12 @@ export const SculptureContainer: React.FC = () => {
           <li>
             <div className="sculpture-item">
               <Link className="series-link" to={"/other-sculptures"}>
-                <img src={Other} />
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/images/sculptures/other-sculptures.png"
+                  }
+                />
                 <p>Other Sculptures</p>
                 <p>&nbsp;</p>
               </Link>
@@ -113,7 +146,12 @@ export const SculptureContainer: React.FC = () => {
           <li>
             <div className="sculpture-item">
               <Link className="series-link" to={"/process-photos"}>
-                <img src={Process} />
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/images/sculptures/process-photos.png"
+                  }
+                />
                 <p>Process Photos</p>
                 <p>&nbsp;</p>
               </Link>

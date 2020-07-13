@@ -1,8 +1,5 @@
 import React from "react";
 import "./homeComponent.css";
-import HomeImage from "../assets/images/home-image.png";
-import SubImageOne from "../assets/images/home-image-two.png";
-import SubImageTwo from "../assets/images/home-image-three.png";
 
 export const HomeComponent: React.FC = () => {
   return (
@@ -18,7 +15,7 @@ export const HomeComponent: React.FC = () => {
             <div className="mobile-hero">
               <img
                 className="mobile-home-image"
-                src={HomeImage}
+                src={process.env.PUBLIC_URL + "/images/home-image.png"}
                 alt="Mobile Home"
               />
             </div>
@@ -79,19 +76,19 @@ export const HomeComponent: React.FC = () => {
               <div className="main-image">
                 <img
                   className="home-image"
-                  src={HomeImage}
+                  src={process.env.PUBLIC_URL + "/images/home-image.png"}
                   alt="Featured Scultpure"
                 />
               </div>
               <div className="sub-image-group">
                 <img
                   className="sub-image left-image"
-                  src={SubImageTwo}
+                  src={process.env.PUBLIC_URL + "/images/home-image-three.png"}
                   alt="Coffee Mug"
                 />
                 <img
                   className="sub-image right-image"
-                  src={SubImageOne}
+                  src={process.env.PUBLIC_URL + "/images/home-image-two.png"}
                   alt="Platter"
                 />
               </div>

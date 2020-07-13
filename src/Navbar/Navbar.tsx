@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import LogoImage from "../assets/images/lightLogo.png";
 import { Link } from "react-router-dom";
 
 export const Navbar: React.FC = () => {
@@ -41,7 +40,7 @@ export const Navbar: React.FC = () => {
               <Link to="/">
                 <img
                   className="logo-image"
-                  src={LogoImage}
+                  src={process.env.PUBLIC_URL + "/images/lightLogo.png"}
                   alt="Hooper Logo"
                   onClick={() => setShowSubMenu(false)}
                 />

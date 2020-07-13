@@ -1,9 +1,5 @@
 import React from "react";
 import "./rorschachContainer.css";
-import Presager from "../../assets/images/rorschach/presager.png";
-import Erethizon from "../../assets/images/rorschach/erethizon-dos.png";
-import Convergent from "../../assets/images/rorschach/convergent-crown.png";
-import Bubonic from "../../assets/images/rorschach/bubonic-queen.png";
 
 export const RorschachContainer: React.FC = () => {
   return (
@@ -12,7 +8,9 @@ export const RorschachContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="rorschach-item">
-              <img src={Presager} />
+              <img
+                src={process.env.PUBLIC_URL + "/images/rorschach/presager.png"}
+              />
               <p>
                 <em>Presager</em>
               </p>
@@ -20,7 +18,11 @@ export const RorschachContainer: React.FC = () => {
           </li>
           <li>
             <div className="rorschach-item">
-              <img src={Erethizon} />
+              <img
+                src={
+                  process.env.PUBLIC_URL + "/images/rorschach/erethizon-dos.png"
+                }
+              />
               <p>
                 <em>Erethizon Dos</em>
               </p>
@@ -28,7 +30,12 @@ export const RorschachContainer: React.FC = () => {
           </li>
           <li>
             <div className="rorschach-item">
-              <img src={Convergent} />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/rorschach/convergent-crown.png"
+                }
+              />
               <p>
                 <em>Convergent Crown</em>
               </p>
@@ -40,7 +47,11 @@ export const RorschachContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="rorschach-item">
-              <img src={Bubonic} />
+              <img
+                src={
+                  process.env.PUBLIC_URL + "/images/rorschach/bubonic-queen.png"
+                }
+              />
               <p>
                 <em>Bubonic Queen</em>
               </p>

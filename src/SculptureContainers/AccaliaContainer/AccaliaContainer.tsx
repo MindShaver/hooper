@@ -1,6 +1,5 @@
 import React from "react";
 import "./accaliaContainer.css";
-import NoName from "../../assets/images/accalia/no-name.png";
 
 export const AccaliaContainer: React.FC = () => {
   return (
@@ -9,7 +8,9 @@ export const AccaliaContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="accalia-item">
-              <img src={NoName} />
+              <img
+                src={process.env.PUBLIC_URL + "/images/accalia/no-name.png"}
+              />
               <p>
                 <em>No Name</em>
               </p>

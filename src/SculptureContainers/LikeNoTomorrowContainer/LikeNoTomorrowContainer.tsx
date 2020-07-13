@@ -1,6 +1,5 @@
 import React from "react";
 import "./likeNoTomorrowContainer.css";
-import NoName from "../../assets/images/like-no-tomorrow/no-name.png";
 
 export const LikeNoTomorrowContainer: React.FC = () => {
   return (
@@ -9,7 +8,13 @@ export const LikeNoTomorrowContainer: React.FC = () => {
         <ul className="inner-row">
           <li>
             <div className="like-no-tomorrow-item">
-              <img className="single-image" src={NoName} />
+              <img
+                className="single-image"
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/like-no-tomorrow/no-name.png"
+                }
+              />
               <p>
                 <em>No Name</em>
               </p>
