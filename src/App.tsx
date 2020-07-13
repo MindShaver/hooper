@@ -3,7 +3,6 @@ import { Footer } from "./Footer/Footer";
 import { Navbar } from "./Navbar/Navbar";
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { SculptureContainer } from "./Sculpture/SculptureContainer";
 import { PotteryContainer } from "./Pottery/PotteryContainer";
 import { AboutContainer } from "./About/AboutContainer";
 import { ContactContainer } from "./Contact/ContactContainer";
@@ -21,6 +20,8 @@ import { OtherSculpturesContainer } from "./SculptureContainers/OtherSculpturesC
 import { ProcessPhotosContainer } from "./SculptureContainers/ProcessPhotosContainer/ProcessPhotosContainer";
 import { RorschachContainer } from "./SculptureContainers/RorschachContainer/RorschachContainer";
 import { SomberSomeoneContainer } from "./SculptureContainers/SomberSomoneContainer/SomberSomoneContainer";
+import { ReusableGrid } from "./ReusableGrid/ReusableGrid";
+import { ScultpureDirectory } from "./SiteData/SculptureDirectory";
 
 function App() {
   return (
@@ -29,7 +30,13 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={HomeComponent} />
-          <Route path="/sculpture" exact component={SculptureContainer} />
+          <Route
+            path="/sculpture"
+            exact
+            render={(props) => (
+              <ReusableGrid {...props} items={ScultpureDirectory} />
+            )}
+          />
           <Route path="/pottery" exact component={PotteryContainer} />
           <Route path="/about" exact component={AboutContainer} />
           <Route path="/contact" exact component={ContactContainer} />

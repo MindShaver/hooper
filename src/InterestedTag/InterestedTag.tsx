@@ -3,7 +3,7 @@ import React from "react";
 export const InterestedTag: React.FC = () => {
   return (
     <div className="info-group">
-      <img src={process.env.PUBLIC_URL + "/images/lightLogo.png"} />
+      <img src={process.env.PUBLIC_URL + "/images/lightLogo.png"} alt="Logo" />
       <div className="inner-info">
         <div className="first-info-item">
           <p>Interested in purchasing a piece?</p>

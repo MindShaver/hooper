@@ -1,4 +1,4 @@
-.sculpture-container {
+.grid-container {
   width: 1080px;
   height: 100%;
   background-color: white;
@@ -7,41 +7,46 @@
   padding-top: 50px;
 }
 
-.sculpture-container .inner-row {
-  display: flex;
-}
-
-.sculpture-container .series-link {
+.grid-container .link {
   text-decoration: none;
   color: black;
 }
 
-.sculpture-container .sculpture-row {
+.grid-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  flex-basis: 100%;
+}
+
+.grid-container .grid-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.sculpture-container .sculpture-col {
+.grid-container .grid-col {
   flex-basis: 100%;
+  flex-direction: column;
 }
 
-.sculpture-container .flex-container {
+.grid-container .flex-container {
   width: 95%;
 }
 
-.sculpture-container .sculpture-item {
+.grid-container .grid-item {
   text-align: center;
   margin-bottom: 20px;
   margin-right: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-  .sculpture-container {
+  .grid-container {
     width: 95%;
     min-height: 95%;
-  }
-  .sculpture-container .inner-row {
-    flex-direction: column;
   }
 }
