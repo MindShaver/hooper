@@ -2,7 +2,7 @@ import React from "react";
 import "./potteryContainer.css";
 import { InterestedTag } from "../InterestedTag/InterestedTag";
 import { ReusableGrid } from "../ReusableGrid/ReusableGrid";
-import { PotteryDirectory } from "../SiteData/PotteryDirectory";
+import { PotteryDirectory } from "../SiteData/DirectoryContent/PotteryDirectory";
 
 export const PotteryContainer = () => {
   return (

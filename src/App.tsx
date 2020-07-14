@@ -7,21 +7,20 @@ import { PotteryContainer } from "./Pottery/PotteryContainer";
 import { AboutContainer } from "./About/AboutContainer";
 import { ContactContainer } from "./Contact/ContactContainer";
 import { HomeComponent } from "./Home/HomeComponent";
-import { MugCarousel } from "./MugCarousel/MugCarousel";
 import { MugContainer } from "./MugContainer/MugContainer";
 import { PlatterContainer } from "./PlatterContainer/PlatterContainer";
-import { AccaliaContainer } from "./SculptureContainers/AccaliaContainer/AccaliaContainer";
-import { BFAContainer } from "./SculptureContainers/BFAContainer/BFAContainer";
-import { FoundObjectContainer } from "./SculptureContainers/FoundObjectContainer/FoundObjectContainer";
-import { HeisenvictusContainer } from "./SculptureContainers/HeisenvictusContainer/HeisenvictusContainer";
-import { HelpYourselfContainer } from "./SculptureContainers/HelpYourselfContainer/HelpYourselfContainer";
-import { LikeNoTomorrowContainer } from "./SculptureContainers/LikeNoTomorrowContainer/LikeNoTomorrowContainer";
-import { OtherSculpturesContainer } from "./SculptureContainers/OtherSculpturesContainer/OtherSculpturesContainer";
-import { ProcessPhotosContainer } from "./SculptureContainers/ProcessPhotosContainer/ProcessPhotosContainer";
-import { RorschachContainer } from "./SculptureContainers/RorschachContainer/RorschachContainer";
-import { SomberSomeoneContainer } from "./SculptureContainers/SomberSomoneContainer/SomberSomoneContainer";
 import { ReusableGrid } from "./ReusableGrid/ReusableGrid";
-import { ScultpureDirectory } from "./SiteData/SculptureDirectory";
+import { ScultpureDirectory } from "./SiteData/DirectoryContent/SculptureDirectory";
+import { HeisenvictusContent } from "./SiteData/ScultpureContent/HeisenvictusContent";
+import { HelpYourselfContent } from "./SiteData/ScultpureContent/HelpYourselfContent";
+import { LikeNoTomorrowContent } from "./SiteData/ScultpureContent/LikeNoTomorrowContent";
+import { SomberSomeoneContent } from "./SiteData/ScultpureContent/SomberSomeoneContent";
+import { RorschachContent } from "./SiteData/ScultpureContent/RorschachContent";
+import { ProcessPhotosContent } from "./SiteData/ScultpureContent/ProcessPhotosContent";
+import { OtherSculpturesContent } from "./SiteData/ScultpureContent/OtherSculpturesContent";
+import { AccaliaContent } from "./SiteData/ScultpureContent/AccaliaContent";
+import { BFAContent } from "./SiteData/ScultpureContent/BFAContent";
+import { FoundObjectContent } from "./SiteData/ScultpureContent/FoundObjectContent";
 
 function App() {
   return (
@@ -42,39 +41,73 @@ function App() {
           <Route path="/contact" exact component={ContactContainer} />
           <Route path="/mugs" exact component={MugContainer} />
           <Route path="/platters-and-more" exact component={PlatterContainer} />
-          <Route path="/accalia" exact component={AccaliaContainer} />
-          <Route path="/bfa-senior-exhibition" exact component={BFAContainer} />
+          <Route
+            path="/accalia"
+            exact
+            render={(props) => (
+              <ReusableGrid {...props} items={AccaliaContent} />
+            )}
+          />
+          <Route
+            path="/bfa-senior-exhibition"
+            exact
+            render={(props) => <ReusableGrid {...props} items={BFAContent} />}
+          />
           <Route
             path="/found-object-insects"
             exact
-            component={FoundObjectContainer}
+            render={(props) => (
+              <ReusableGrid {...props} items={FoundObjectContent} />
+            )}
           />
-          <Route path="/heisenvictus" exact component={HeisenvictusContainer} />
+          <Route
+            path="/heisenvictus"
+            exact
+            render={(props) => (
+              <ReusableGrid {...props} items={HeisenvictusContent} />
+            )}
+          />
           <Route
             path="/help-yourself"
             exact
-            component={HelpYourselfContainer}
+            render={(props) => (
+              <ReusableGrid {...props} items={HelpYourselfContent} />
+            )}
           />
           <Route
             path="/like-no-tomorrow"
             exact
-            component={LikeNoTomorrowContainer}
+            render={(props) => (
+              <ReusableGrid {...props} items={LikeNoTomorrowContent} />
+            )}
           />
           <Route
             path="/other-sculptures"
             exact
-            component={OtherSculpturesContainer}
+            render={(props) => (
+              <ReusableGrid {...props} items={OtherSculpturesContent} />
+            )}
           />
           <Route
             path="/process-photos"
             exact
-            component={ProcessPhotosContainer}
+            render={(props) => (
+              <ReusableGrid {...props} items={ProcessPhotosContent} />
+            )}
           />
-          <Route path="/rorschach" exact component={RorschachContainer} />
+          <Route
+            path="/rorschach"
+            exact
+            render={(props) => (
+              <ReusableGrid {...props} items={RorschachContent} />
+            )}
+          />
           <Route
             path="/somber-someone"
             exact
-            component={SomberSomeoneContainer}
+            render={(props) => (
+              <ReusableGrid {...props} items={SomberSomeoneContent} />
+            )}
           />
         </Switch>
         <Footer />

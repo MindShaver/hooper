@@ -3,7 +3,7 @@ interface IAboutData {
   aboutBio: string[];
 }
 
-export const AboutData: IAboutData = {
+export const AboutDirectory: IAboutData = {
   aboutImage: process.env.PUBLIC_URL + "/images/about-image.png",
   aboutBio: [
     `Wesley Hooper is a ceramic and mixed media artist living in

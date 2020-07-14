@@ -1,6 +1,6 @@
 import React from "react";
 import "./aboutContainer.css";
-import { AboutData } from "./aboutData";
+import { AboutDirectory } from "../SiteData/DirectoryContent/AboutDirectory";
 
 export const AboutContainer = () => {
   return (
@@ -11,11 +11,11 @@ export const AboutContainer = () => {
             <div className="mobile-image-group">
               <img
                 className="mobile-about-image"
-                src={AboutData.aboutImage}
+                src={AboutDirectory.aboutImage}
                 alt="Wesley Hooper"
               />
             </div>
-            {AboutData.aboutBio.map((paragraph: string) => {
+            {AboutDirectory.aboutBio.map((paragraph: string) => {
               return <div className="paragraph-item"> {paragraph} </div>;
             })}
           </div>
@@ -25,7 +25,7 @@ export const AboutContainer = () => {
             <div className="image-group">
               <img
                 className="about-image"
-                src={AboutData.aboutImage}
+                src={AboutDirectory.aboutImage}
                 alt="Wesley Hooper"
               />
             </div>

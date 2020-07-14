@@ -1,4 +1,4 @@
-import { IGridItem } from "../ReusableGrid/ReusableGrid";
+import { IGridItem } from "../../ReusableGrid/ReusableGrid";
 
 export const ScultpureDirectory: IGridItem[] = [
   {

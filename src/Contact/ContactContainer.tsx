@@ -1,6 +1,6 @@
 import React from "react";
 import "./contactContainer.css";
-import { MyForm } from "../EmailForm/MyForm";
+import { MyForm } from "./EmailForm/MyForm";
 
 export const ContactContainer = () => {
   return (
