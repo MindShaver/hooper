@@ -1,14 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./reusableGrid.css";
-
-export interface IGridItem {
-  imgPath: string;
-  altText: string;
-  title: string;
-  subTitle?: string;
-  linkTo?: string;
-}
+import { IGridItem } from "../Domain/IGridItem";
 
 interface IGridProps {
   items: IGridItem[];

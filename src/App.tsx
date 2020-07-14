@@ -7,8 +7,6 @@ import { PotteryContainer } from "./Pottery/PotteryContainer";
 import { AboutContainer } from "./About/AboutContainer";
 import { ContactContainer } from "./Contact/ContactContainer";
 import { HomeComponent } from "./Home/HomeComponent";
-import { MugContainer } from "./MugContainer/MugContainer";
-import { PlatterContainer } from "./PlatterContainer/PlatterContainer";
 import { ReusableGrid } from "./ReusableGrid/ReusableGrid";
 import { ScultpureDirectory } from "./SiteData/DirectoryContent/SculptureDirectory";
 import { HeisenvictusContent } from "./SiteData/ScultpureContent/HeisenvictusContent";
@@ -21,6 +19,9 @@ import { OtherSculpturesContent } from "./SiteData/ScultpureContent/OtherSculptu
 import { AccaliaContent } from "./SiteData/ScultpureContent/AccaliaContent";
 import { BFAContent } from "./SiteData/ScultpureContent/BFAContent";
 import { FoundObjectContent } from "./SiteData/ScultpureContent/FoundObjectContent";
+import { ReusableCarousel } from "./ReusableCarousel/ReusableCarousel";
+import { MugCarouselContent } from "./SiteData/CarouselContent/MugCarouselContent";
+import { PlatterCarouselContent } from "./SiteData/CarouselContent/PlatterCarouselContent";
 
 function App() {
   return (
@@ -39,8 +40,20 @@ function App() {
           <Route path="/pottery" exact component={PotteryContainer} />
           <Route path="/about" exact component={AboutContainer} />
           <Route path="/contact" exact component={ContactContainer} />
-          <Route path="/mugs" exact component={MugContainer} />
-          <Route path="/platters-and-more" exact component={PlatterContainer} />
+          <Route
+            path="/mugs"
+            exact
+            render={(props) => (
+              <ReusableCarousel {...props} items={MugCarouselContent} />
+            )}
+          />
+          <Route
+            path="/platters-and-more"
+            exact
+            render={(props) => (
+              <ReusableCarousel {...props} items={PlatterCarouselContent} />
+            )}
+          />
           <Route
             path="/accalia"
             exact
